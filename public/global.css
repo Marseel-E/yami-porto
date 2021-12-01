@@ -1,0 +1,43 @@
+:root {
+	--clr-main: #b1a7a5;
+	--clr-div: #e5e5e5;
+	--clr-p: #ea3057;
+	--clr-h1: #191919;
+	--clr-span: #5b5553;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body::-webkit-scrollbar {
+	width: 1rem;
+	background-color: var(--clr-span);
+}
+body::-webkit-scrollbar-thumb {
+	background-color: var(--clr-div);
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+	background-color: var(--clr-main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--clr-h1);
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+p {
+	color: var(--clr-p);
+	letter-spacing: 1.5px;
+	line-height: 1.5rem;
+}
+p::first-letter { text-transform: capitalize; }
+span { color: var(--clr-span); }
+div { background-color: var(--clr-div); }
